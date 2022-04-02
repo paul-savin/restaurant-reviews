@@ -1,4 +1,4 @@
-let restaurantsList
+let restaurants
 export default class RestaurantsDAO {
   static async injectDB(conn) {
     if (restaurants) {
@@ -74,10 +74,4 @@ export default class RestaurantsDAO {
       }
     }
   }
-}
-
-
-try {
-  const restaurantsList = await displayCursor.toArray()
-  const
 }
